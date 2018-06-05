@@ -22,7 +22,7 @@ var plugin  = {
             path: path,
             config: config,
             handler: function (request, h) {
-                const page = render.renderVoyagerPage(middlewareOptions);
+                const page = render["default"](options);
                 return page;
             }
         });
